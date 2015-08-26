@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>X-Frame-Options</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <h2>X-Frame-Options</h2>
+    </header>
+
+    <div class="container">
+      <h3>Google</h3>
+      <iframe class="frame" src="http://www.google.co.jp">
+      </iframe>
+
+      <h3>Yahoo</h3>
+      <iframe class="frame" src="http://www.yahoo.co.jp"  onload="console.log('yahoooo');" onerror="console.log('haaa');">>
+      </iframe>
+
+      <h3>NTT</h3>
+      <iframe class="frame" src="http://www.ntt.co.jp" onload="console.log('hogehoge');">
+      </iframe>
+
+    </div>
+
+    <footer>
+      <!--#include virtual="fragments/footer.html" -->
+    </footer>
+
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/lodash/lodash.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

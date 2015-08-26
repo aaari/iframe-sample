@@ -1,0 +1,23 @@
+{
+  "name": "web-template",
+  "version": "0.0.1",
+  "authors": [
+    "torub"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "1.11.2",
+    "q": "~1.0.1",
+    "lodash": "~3.10.1"
+  }
+}
