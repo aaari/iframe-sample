@@ -9,24 +9,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
-    <header>
-      <!--#include virtual="fragments/header.html" -->
-    </header>
-
     <div class="container">
 
       <h2>iframeを使ったテスト</h2>
+      <h3>素材</h3>
+      <ul>
+        <li><a href="blue.html">埋め込み用(背景青)</a></li>
+        <li><a href="red.html">埋め込み用(背景赤)</a></li>
+        <li><a href="iframe01.html">サイズ指定なし(読込先800x800)</a></li>
+      </ul>
+
+      <h2>X-Frame-Options</h2>
       <ul>
         <li><a href="xframe.html">X-Frame-Options</a></li>
       </ul>
 
+      <h3>サイズ指定</h3>
+      iOSは普通の書き方だとNG。Androidは問題なし
+      <ul>
+        <li><a href="iframe02.html">NGパターン: サイズ指定iframe(300x300) →読込先800x800</a></li>
+        <li><a href="iframe03.html">OKパターン: サイズ指定iframe(300x300) →読込先800x800</a></li>
+      </ul>
+
+      <h3>iframe内のピンチイン・アウト</h3>
+      iOS/Android共、通常だと不可。CSSを使って特殊な手段で実現
+      <ul>
+        <li><a href="iframe02.html">NGパターン: サイズ指定iframe(300x300) →読込先800x800</a></li>
+        <li><a href="iframe03.html">OKパターン: サイズ指定iframe(300x300) →読込先800x800</a></li>
+      </ul>
+
     </div>
-
-    <footer>
-      <!--#include virtual="fragments/footer.html" -->
-    </footer>
-
     <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/lodash/lodash.min.js"></script>
     <script src="js/main.js"></script>

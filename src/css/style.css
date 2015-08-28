@@ -5,17 +5,17 @@
  */
 
 body {
-  margin: 0;
+//  margin: 0;
 }
 
 .container {
-  width: 970px;
-  margin: 0 auto;
+  //width: 970px;
+  //margin: 0 auto;
 }
 .container:after {
-  display: table;
-  clear: both;
-  content: " ";
+  //display: table;
+  //clear: both;
+  //content: " ";
 }
 
 /* header */
@@ -63,12 +63,13 @@ nav li:not(:last-child) {
   padding-right: 12px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .frame {
   border: 1px solid lightgray;
   width: 500px;
   height: 200px;
+}
+
+.blue {
+  background-color: blue;
+  height: 500px;
 }

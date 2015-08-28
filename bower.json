@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "1.11.2",
     "q": "~1.0.1",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "jquery-touchswipe": "~1.6.9"
   }
 }
